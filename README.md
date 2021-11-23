@@ -1,1 +1,1 @@
-# localization
+# Локализация проекта LiteDays ☀️
