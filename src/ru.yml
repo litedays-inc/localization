@@ -18,6 +18,16 @@ stream_not_streaming: '$main_prefix$Вы не ведёте активную тр
 prefix_changed_to: '$main_prefix$Вы успешно сменили префикс на %prefix%§f!' 
 prefix_reset: '$main_prefix$Вы успешно сменили свой префикс на §7Стандартный§f!'
 
+lvl_up_title: '§a§l§kX§c§l УРОВЕНЬ ПОВЫШЕН §a§l§kX§r'
+lvl_up_subtitle: '§fВы достигли §b%new_level% §fуровня'
+lvl_up_message:
+- ''
+- '          §b§kX§c§l НОВЫЙ УРОВЕНЬ §b§kX'
+- '  §fВы достигли §d%new_level% §fуровня!'
+- '  §fДо следущего необходимо §a%total_exp% §fопыта'
+- ''
+- ''
+
 streams_help:
 - '§6Streams §8| §fСписок доступных команд:'
 - ' §e/stream add <ссылка> §7- §fдобавить трансляцию'
