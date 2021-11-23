@@ -1,0 +1,5 @@
+main_prefix: '§6Сервер §8| §r'
+
+command_no_permission: '$main_prefix$Данная команда доступна от привилегии %group% §fи выше.'
+command_only_auth: '$main_prefix$Авторизируйтесь, чтобы использовать данную команду.'
+command_block_this_server: '$main_prefix$§cДанная команда заблокирована на данном сервере!'
