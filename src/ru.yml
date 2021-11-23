@@ -20,14 +20,12 @@ streams_help:
 - ' §e/stream remove §7- §fудалить текущую трансляцию'
 - ' §e/streams §7- §fактивные трансляции'
 stream_new_announce:
+- '$center$§c§lВНИМАНИЕ§8'
 - ''
-- '$center$§8■■■■■§c§lВНИМАНИЕ§8■■■■■'
-- ''
-- '$center$%streamer%'
-- '$center$§fзапустил трансляцию на %platform%'
+- '$center$%streamer% §fзапустил трансляцию на платформе'
+- '$center$%platform%'
 - ''
 - '$center$§a• Нажмите, чтобы открыть трансляцию •'
-- ''
 streams_announce:
 - ''
 - '$center$§8■■■■■§c§lВНИМАНИЕ§8■■■■■'
