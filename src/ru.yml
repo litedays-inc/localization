@@ -18,13 +18,16 @@ stream_not_streaming: '$main_prefix$Вы не ведёте активную тр
 prefix_changed_to: '$main_prefix$Вы успешно сменили префикс на %prefix%§f!' 
 prefix_reset: '$main_prefix$Вы успешно сменили свой префикс на §7Стандартный§f!'
 
+lvl_command:
+- '$main_prefix$Уровень §a%level% §fуровень'
+- '$main_prefix$До следующего уровня необходимо §e%total_exp% §fопыта'
 lvl_up_title: '§a§l§kX§c§l УРОВЕНЬ ПОВЫШЕН §a§l§kX§r'
 lvl_up_subtitle: '§fВы достигли §b%new_level% §fуровня'
 lvl_up_message:
 - ''
 - '          §b§kX§c§l НОВЫЙ УРОВЕНЬ §b§kX'
 - '  §fВы достигли §d%new_level% §fуровня!'
-- '  §fДо следущего необходимо §a%total_exp% §fопыта'
+- '  §fДо следующего уровня необходимо §a%total_exp% §fопыта'
 - ''
 - ''
 
