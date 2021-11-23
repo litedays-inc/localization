@@ -1,9 +1,11 @@
 main_prefix: '§6Сервер §8| §r'
+friends_prefix: '§eДрузья §8| §r'
 
 command_no_permission: '$main_prefix$Данная команда доступна от привилегии %group% §fи выше.'
 command_only_auth: '$main_prefix$Авторизируйтесь, чтобы использовать данную команду.'
 command_block_this_server: '$main_prefix$§cДанная команда заблокирована на данном сервере!'
 command_sub_not_found: '$main_prefix$Данная подкоманда не обнаружена.'
+command_user_offline: '$main_prefix$Данный игрок никогда прежде не играл на нашем проекте!'
 
 command_default: '$main_prefix$Вы указали неверные агрументы, используйте §a%arg%'
 command_stream_add_format: '/stream add <ссылка>'
@@ -37,3 +39,14 @@ streams_announce:
 - '$center$§fНа данным момент на сервере проходит §a%count%'
 - ''
 - '$center$§a• Нажмите, чтобы открыть список трансляций •'
+
+command_friend_add_format: '/friend add <ник игрока>'
+friends_notification_join: '$friends_prefix$%friend% §fзашёл на сервер!'
+friends_notification_quit: '$friends_prefix$%friend% §fвышел с сервер!'
+friends_notification_requests:
+- '$friends_prefix$У вас есть §a%count% §fнеотвеченных заявок в друзья!'
+
+friends_gui_information_name: '§aОбщая информация'
+friends_gui_information_lore:
+- '§7Всего друзей: §a%count%'
+- '§7В сети: §a%online%'
