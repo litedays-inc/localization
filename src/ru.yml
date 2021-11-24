@@ -67,3 +67,18 @@ friends_gui_information_name: '§aОбщая информация'
 friends_gui_information_lore:
 - '§7Всего друзей: §a%count%'
 - '§7В сети: §a%online%'
+
+friends_sorting_type_by_online: 'По онлайну'
+friends_sorting_type_by_status: 'По статусу'
+
+friends_gui_item_sorting_name: '§aСортировка списка'
+friends_gui_item_sorting_lore:
+- ''
+- '§7С помощью этой функции вы можете'
+- '§7отсортировать список своих друзей'
+- '§7по своему усмотрению.'
+- ''
+- '§7Текущая сортировка: §a%current_sorting_name%'
+- ''
+- '§e▸ ЛКМ, чтобы перейти к следующей'
+- '§e▸ ПКМ, чтобы перейти к предыдущей'
