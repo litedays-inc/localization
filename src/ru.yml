@@ -99,3 +99,9 @@ friends_gui_item_sorting_lore:
 - ''
 - '§e▸ ЛКМ, чтобы перейти к следующей'
 - '§e▸ ПКМ, чтобы перейти к предыдущей'
+
+friends_requests_gui_item_name: '%user_displayname%'
+friends_requests_gui_item_lore:
+- ''
+- '§e▸ ЛКМ, чтобы принять запрос'
+- '§e▸ ПКМ, чтобы отклонить запрос'
