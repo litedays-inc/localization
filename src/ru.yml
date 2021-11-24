@@ -94,12 +94,9 @@ friends_gui_information_lore:
 - '§7Всего друзей: §a%count%'
 - '§7В сети: §a%online%'
 
-friends_sorting_type_by_online: 'По онлайну'
-friends_sorting_type_by_status: 'По статусу'
 friends_filter_type_by_donate_group: 'Только с платным статусом'
 friends_filter_type_by_universal_group: 'Только с универсальным статусом'
-friends_filter_type_no_filter: 'Без фильтрва'
-
+friends_filter_type_no_filter: 'Без фильтра'
 friends_gui_item_filter_name: '§aФильтр списка'
 friends_gui_item_filter_lore:
 - ''
@@ -124,6 +121,8 @@ friends_gui_item_requests_lore:
 - ''
 - '§e▸ Нажмите, чтобы открыть меню'
 
+friends_sorting_type_by_online: 'По онлайну'
+friends_sorting_type_by_status: 'По статусу'
 friends_gui_item_sorting_name: '§aСортировка списка'
 friends_gui_item_sorting_lore:
 - ''
