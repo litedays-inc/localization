@@ -19,8 +19,8 @@ prefix_changed_to: '$main_prefix$Вы успешно сменили префик
 prefix_reset: '$main_prefix$Вы успешно сменили свой префикс на §7Стандартный§f!'
 
 lvl_command:
-- '$main_prefix$Уровень §a%level% §fуровень'
-- '$main_prefix$До следующего уровня необходимо §e%total_exp% §fопыта'
+- '$main_prefix$У вас §d%level% §fуровень'
+- '$main_prefix$До следующего уровня необходимо §a%total_exp% §fопыта'
 lvl_up_title: '§a§l§kX§c§l УРОВЕНЬ ПОВЫШЕН §a§l§kX§r'
 lvl_up_subtitle: '§fВы достигли §b%new_level% §fуровня'
 lvl_up_message:
