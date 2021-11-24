@@ -76,7 +76,16 @@ friends_accept_success: '$friends_prefix$Вы успешно стали друз
 friends_deny_success_yourself: '$friends_prefix$Вы успешно отклонили запрос в друзья от игрока %target%§f!'
 friends_deny_success: '$friends_prefix$%target% §fотклонил ваш запрос в друзья. §7Он не знает, что он потерял :('
 friends_notification_join: '$friends_prefix$%friend% §fзашёл на сервер!'
-friends_notification_quit: '$friends_prefix$%friend% §fвышел с сервер!'
+friends_notification_quit: '$friends_prefix$%friend% §fвышел с сервера!'
+friends_help:
+- '$friends_prefix$§fСписок доступных команд:'
+- ' §e/friends §7- §fоткрыть список друзей'
+- ' §e/friend requests §7- §fоткрыть список заявок'
+- ' §e/friend accept <ник> §7- §fпринять игрока в друзья'
+- ' §e/friend deny <ник> §7- §fотклонить запрос игрока'
+- ' §e/friend add <ник> §7- §fдобавить игрока в друзья'
+- ' §e/friend remove <ник> §7- §fдобавить игрока в друзья'
+- ' §e/friend teleport <ник> §7- §fтелепортироваться на сервер друга'
 friends_notification_requests:
 - '$friends_prefix$У вас есть §a%count% §fнеотвеченных заявок в друзья!'
 
@@ -87,13 +96,28 @@ friends_gui_information_lore:
 
 friends_sorting_type_by_online: 'По онлайну'
 friends_sorting_type_by_status: 'По статусу'
+friends_filter_type_by_donate_group: 'Только с платным статусом'
+friends_filter_type_by_universal_group: 'Только с универсальным статусом'
+friends_filter_type_by_no_filter: 'Без фильтрва'
+
+friends_gui_item_filter_name: '§aФильтр списка'
+friends_gui_item_filter_lore:
+- ''
+- '§7С помощью этой функции вы можете'
+- '§7отфильтровать список своих друзей'
+- '§7по своему усмотрению'
+- ''
+- '§7Текущий фильтр: §a%currect_filter_name%'
+- ''
+- '§e▸ ЛКМ, чтобы перейти к следующей'
+- '§e▸ ПКМ, чтобы перейти к предыдущей'
 
 friends_gui_item_sorting_name: '§aСортировка списка'
 friends_gui_item_sorting_lore:
 - ''
 - '§7С помощью этой функции вы можете'
 - '§7отсортировать список своих друзей'
-- '§7по своему усмотрению.'
+- '§7по своему усмотрению'
 - ''
 - '§7Текущая сортировка: §a%current_sorting_name%'
 - ''
