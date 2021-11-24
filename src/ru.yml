@@ -79,7 +79,6 @@ friends_notification_join: '$friends_prefix$%friend% §fзашёл на серв
 friends_notification_quit: '$friends_prefix$%friend% §fвышел с сервера!'
 friends_help:
 - '$friends_prefix$§fСписок доступных команд:'
-- ' §e/friends §7- §fоткрыть список друзей'
 - ' §e/friend requests §7- §fоткрыть список заявок'
 - ' §e/friend accept <ник> §7- §fпринять игрока в друзья'
 - ' §e/friend deny <ник> §7- §fотклонить запрос игрока'
