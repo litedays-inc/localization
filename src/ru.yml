@@ -37,6 +37,8 @@ core_not_connected_kick:
 core_successfully_connected: '$core_prefix$§aСоединение с главным ядром восстановлено, приятной игры!'
 core_successfully_connected_title: '§aСоединение восстановлено;§fПриятной игры!'
 
+user_connecting_to_server: '§aПодключение на %server_name%..'
+
 tab_header:
 - '§6§lLiteDays'
 - ''
