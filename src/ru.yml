@@ -211,7 +211,7 @@ lobby_board_lines:
 - '§fМонеток: §e%user_coins%'
 - ''
 - '§fУровень: §d%user_level%'
-- ' §8[ %user_progress_bar% §8] §a%level_procent%%'
+- ' §8[ %level_progress_bar% §8] §a%level_procent%%'
 - ''
 - '§fОнлайн проекта: §a%global_online%'
 - ''
