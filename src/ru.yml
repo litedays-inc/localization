@@ -203,3 +203,17 @@ friends_requests_gui_item_lore:
 
 servers_is_disabled: '§cОшибка, сервера данного режима недоступны!'
 
+lobby_board_title: '§e§lLiteDays Network'
+lobby_board_lines:
+- ''
+- '§fСтатус: %user_group_name%'
+- '§fЗолота: §6%user_golds%'
+- '§fМонет: §a%user_coins%'
+- ''
+- '§fУровень: §d%user_level%'
+- '§fПрогресс уровня:'
+- '%user_progress_bar%'
+- ''
+- '§fОнлайн проекта: §a%global_online%'
+- ''
+- '§ewww.litedays.net
