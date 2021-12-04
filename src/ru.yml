@@ -203,17 +203,39 @@ friends_requests_gui_item_lore:
 
 servers_is_disabled: '§cОшибка, сервера данного режима недоступны!'
 
-lobby_board_title: '§e§lLiteDays Network'
+lobby_board_title: '§e§lLiteDays'
 lobby_board_lines:
 - ''
 - '§fСтатус: %user_group_name%'
 - '§fЗолота: §6%user_golds%'
-- '§fМонет: §a%user_coins%'
+- '§fМонеток: §e%user_coins%'
 - ''
 - '§fУровень: §d%user_level%'
-- '§fПрогресс уровня:'
-- '%user_progress_bar%'
+- ' §8[ %user_progress_bar% §8] §a%level_procent%%'
 - ''
 - '§fОнлайн проекта: §a%global_online%'
 - ''
 - '§ewww.litedays.net'
+
+lobby_items_game_selector_name: '§aВыбор режима'
+lobby_items_game_selector_lore:
+    - '§7Используйте этот предмет'
+    - '§7для выбора режима'
+lobby_items_profile_name: '§eПрофиль'
+lobby_items_profile_lore:
+    - '§7Используйте этот предмет'
+    - '§7для получение информации о вас'
+lobby_items_fast_game_name: '§aБыстрая игра'
+lobby_items_fast_game_lore:
+    - '§7Используйте этот предмет,'
+    - '§7чтобы быстро найти сервер'
+    - ''
+    - '§7Доступно от §b§lDIAMOND§7 и выше'
+lobby_items_privileges_name: '§eПривилегии'
+lobby_items_privileges_lore:
+    - '§7Используйте этот предмет'
+    - '§7для просмотра привилегий'
+lobby_items_lobby_selector_name: '§eВыбор лобби'
+lobby_items_lobby_selector_lore:
+    - '§7Используйте этот предмет'
+    - '§7для смены игрового лобби'
