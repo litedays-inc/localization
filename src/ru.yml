@@ -1,5 +1,5 @@
 main_prefix: '§6LiteDays §8| §r'
-core_prefix: '§eЯдро §8| §r'
+admin_prefix: '§cАдминстрация §8| §r'
 friends_prefix: '§eДрузья §8| §r'
 
 command_no_permission: '$main_prefix$Данная команда доступна от группы %group% §fи выше.'
@@ -8,6 +8,14 @@ command_block_this_server: '$main_prefix$§cДанная команда забл
 command_sub_not_found: '$main_prefix$Данная подкоманда не обнаружена.'
 command_user_offline: '$main_prefix$Данный игрок никогда прежде не играл на нашем проекте!'
 command_player_offline: '$main_prefix$%target% §fне найден, возможно, он не в сети или находится на недоступном вам сервере.'
+
+group_already_default: '§cОшибка, у игрока %player% §cнет группы'
+group_changes_broadcast: '$admin_prefix$%user_display_name% §7изменил группу игрока %target_display_name% §7на %group_changed%'
+group_rank_admin: '§cОшибка, вы не можете выдавать группу администратора'
+group_change_rank_admin: '§cОшибка, вы не можете изменить группу игрока %player%'
+group_success_set: 'Группа %group% §rбыла успешно установлена игроку %player%'
+group_already_exists: '§cОшибка, у игрока %player% §cуже имеется данная группа'
+group_cant_give_group_yourself: '§cОшибка, вы не можете изменить свою группу'
 
 user_not_loaded: '§cОшибка при загрузке данных..'
 user_whitelist_kick:
@@ -28,11 +36,8 @@ core_not_connected_motd:
 - '§cсоединение с главным ядром!'
 
 core_not_connected_kick:
-- '§cСоединение с ядром потеряно'
-- ''
-- '§7Прокси потерял соединение с главным ядром'
-- '§7Ожидайте когда сервер подключиться к ядру'
-- ''
+- '§cСетевое общение с главным ядром потеряно'
+- '§cВ настоящий момент вход на сервер невозможен'
 
 core_successfully_connected: '$core_prefix$§aСоединение с главным ядром восстановлено, приятной игры!'
 core_successfully_connected_title: '§aСоединение восстановлено;§fПриятной игры!'
@@ -221,13 +226,17 @@ lobby_items_game_selector_name: '§aВыбор режима'
 lobby_items_game_selector_lore:
     - '§7Используйте этот предмет'
     - '§7для выбора режима'
-lobby_items_profile_name: '§eПрофиль'
+lobby_items_profile_name: '§eПрофиль игрока %user_display_name'
 lobby_items_profile_lore:
     - '§7Используйте этот предмет'
     - '§7для получение информации о вас'
+lobby_items_gadgets_name: '§aГаджеты'
+lobby_items_gadgets_lore:
+    - '§7Уникальная косметика для'
+    - '§7развлечения в лобби'
 lobby_items_fast_game_name: '§aБыстрая игра'
 lobby_items_fast_game_lore:
-    - '§7Используйте этот предмет,'
+    - '§7Используйте этот предмет'
     - '§7чтобы быстро найти сервер'
     - ''
     - '§7Доступно от §b§lDIAMOND§7 и выше'
