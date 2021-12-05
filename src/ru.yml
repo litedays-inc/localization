@@ -291,6 +291,13 @@ menu_gamemode_selector_lore:
     - ''
     - '%status_on_server%'
    
+menu_gamemode_hub_name: '§a%server%'
+menu_gamemode_hub_lore:
+    - ''
+    - '§eНажмите, чтобы подключиться'
+menu_gamemode_hub_already_lore:
+    - ''
+    - '§cВы уже находитесь в хабе!'
 menu_gamemode_selector_donate_name: 'Привилегии'
 menu_gamemode_selector_donate_lore:
     - '§7Все возможности привилегий расписаны в'
