@@ -250,7 +250,7 @@ lobby_items_lobby_selector_lore:
     - '§7для смены игрового лобби'
 
 menu_gamemode_selector_click_to_connect: '§e▸ Нажмите, чтобы присоединиться'
-menu_gamemode_selector_disabled_servers: '§c▸ Сервера указанного режима отключены'
+menu_gamemode_selector_disabled_servers: 'Сервера указанного режима отключены'
 menu_gamemode_selector_on_development: '§cДанный режим находится в разработке'
 
 menu_gamemode_selector_skyblock_description:
@@ -259,6 +259,7 @@ menu_gamemode_selector_skyblock_description:
     - '§7Приглашай друзей в совместную игру и построй' 
     - '§7и построй лучший остров!'
 menu_gamemode_selector_lore:
+    - '%description%
     - ''
     - '§7Онлайн режима: §a%game_online%'
     - ''
