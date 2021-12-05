@@ -253,6 +253,14 @@ menu_gamemode_selector_click_to_connect: '§e▸ Нажмите, чтобы пр
 menu_gamemode_selector_disabled_servers: 'Сервера указанного режима отключены'
 menu_gamemode_selector_on_development: '§cДанный режим находится в разработке'
 
+menu_gamemode_selector_skywars_description:
+    - ''
+menu_gamemode_selector_bedwars_description:
+    - ''
+menu_gamemode_selector_duels_description:
+    - ''
+menu_gamemode_selector_luckywars_description:
+    - ''
 menu_gamemode_selector_skyblock_description:
     - '§7Начни игру на острове в небе и развивайся.'
     - '§7Выполняй задания, торгуй с другими игроками...'
