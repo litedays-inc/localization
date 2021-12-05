@@ -283,7 +283,9 @@ menu_gamemode_selector_skyblock_description:
     - '§7Приглашай друзей в совместную игру и построй' 
     - '§7и построй лучший остров!'
 menu_gamemode_selector_luckywars_description:
-    - ''
+    - '§7В этой игре ваша цель состоит в том,'
+    - '§7чтобы разбивать блоки блоков,'
+    - '§7собирать классные вещи и убивать всех противников'
    
 menu_gamemode_selector_lore:
     - '§7Онлайн режима: §B%online%'
