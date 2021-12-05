@@ -212,13 +212,15 @@ lobby_board_title: '§e§lLiteDays'
 lobby_board_lines:
 - ''
 - '§fСтатус: %user_group_name%'
+- ''
 - '§fЗолота: §6%user_golds%'
 - '§fМонеток: §e%user_coins%'
 - ''
 - '§fВаш уровень: §d%user_level%'
 - ' §8[ %level_progress_bar% §8] §a%level_procent%%'
 - ''
-- '§fОнлайн проекта: §a%global_online%'
+- '§fОнлайн в хабе: §a%server_online%'
+- '§fОбщий онлайн: §a%global_online%'
 - ''
 - '§ewww.litedays.net'
 
@@ -226,7 +228,7 @@ lobby_items_game_selector_name: '§aВыбор режима'
 lobby_items_game_selector_lore:
     - '§7Используйте этот предмет'
     - '§7для выбора режима'
-lobby_items_profile_name: '§eПрофиль игрока %user_display_name'
+lobby_items_profile_name: '§eПрофиль игрока %user_display_name%'
 lobby_items_profile_lore:
     - '§7Используйте этот предмет'
     - '§7для получение информации о вас'
@@ -249,24 +251,41 @@ lobby_items_lobby_selector_lore:
     - '§7Используйте этот предмет'
     - '§7для смены игрового лобби'
 
-menu_gamemode_selector_click_to_connect: '§e▸ Нажмите, чтобы присоединиться'
-menu_gamemode_selector_disabled_servers: 'Сервера указанного режима отключены'
+menu_gamemode_selector_click_to_connect: '§e▸ Нажмите, чтобы присоединиться!'
+menu_gamemode_selector_disabled_servers: '§cСервера указанного режима отключены!'
 menu_gamemode_selector_on_development: '§cДанный режим находится в разработке'
 
 menu_gamemode_selector_skywars_description:
-    - ''
+    - '§7Каждый игрок появляется на отдельном'
+    - '§7острове. Ищите вещи в сундуках'
+    - '§7и устраните всех противников'
 menu_gamemode_selector_bedwars_description:
+    - '§7Сражение между несколькими командами'
+    - '§7за право на возрождение! Защитите'
+    - '§7свою кровать и уничтожьте другие,'
+    - '§7если хотите победить...'
+menu_gamemode_selector_smasher_description:
+    - '§7Этот режим, который не даст заскучать,' 
+    - '§7зарабатывай монетки за убийство игроков'
+    - '§7прокачивай свое оружие, броню, выбивайся'
+    - '§7в топ, чтобы показать кто тут батя!' 
+menu_gamemode_selector_anarchy_description:
+    - '§7Выживай на единственном сервере'
+    - '§7без КРЕАТИВА! Строй свои базы,'
+    - '§7ходи на рейды, собирай аирдропы и'
+    - '§7переживай случайные события!'
     - ''
-menu_gamemode_selector_duels_description:
-    - ''
-menu_gamemode_selector_luckywars_description:
-    - ''
+    - '§cУстановленная версия для игры на'
+    - '§cданном режиме - 1.16'
 menu_gamemode_selector_skyblock_description:
     - '§7Начни игру на острове в небе и развивайся.'
     - '§7Выполняй задания, торгуй с другими игроками...'
     - '§7Приглашай друзей в совместную игру и построй' 
     - '§7и построй лучший остров!'
+menu_gamemode_selector_luckywars_description:
+    - ''
+   
 menu_gamemode_selector_lore:
-    - '§7Онлайн режима: §a%online%'
+    - '§7Онлайн режима: §B%online%'
     - ''
     - '%status_on_server%'
