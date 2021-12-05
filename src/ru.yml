@@ -259,7 +259,7 @@ menu_gamemode_selector_skyblock_description:
     - '§7Приглашай друзей в совместную игру и построй' 
     - '§7и построй лучший остров!'
 menu_gamemode_selector_lore:
-    - '%description%
+    - '%description%'
     - ''
     - '§7Онлайн режима: §a%game_online%'
     - ''
