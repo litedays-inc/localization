@@ -1,6 +1,48 @@
 main_prefix: '§6LiteDays §8| §r'
 admin_prefix: '§cАдминстрация §8| §r'
 friends_prefix: '§eДрузья §8| §r'
+auth_prefix: '§6Авторизация §8| §r'
+
+auth_not_registered: '$auth_prefix$§cВы должны быть зарегистрированными, чтобы использовать данную команду'
+auth_not_authorized: '$auth_prefix$§cВы должны быть авторизированны, чтобы использовать данную команду'
+auth_already_registered: '$auth_prefix$§cВы уже зарегистрированы'
+auth_already_login: '$auth_prefix$§cВы уже авторизированны на сервере'
+auth_logout:
+    - '§cВы вышли из своего аккаунта'
+auth_command_login_use: '$auth_prefix$§eПожалуйста, авторизуйтесь на сервер с помощью команды §b/login <пароль>'
+auth_command_register_use: '$auth_prefix$§eВам необходимо зарегистрироваться, используйте §b/register <пароль> <повтор пароля>'
+auth_changepassword_use: '$auth_prefix$§eНеверно введены аргументы команды, используйте §b/changepassword <пароль> <повтор пароля>'
+auth_changepassword_wrong_password: '$auth_prefix$§cПароли не совпадают!'
+auth_change_password: '$auth_prefix$§aВаш пароль успешно изменен!'
+auth_change_password_hover:
+    - '§7Пароль: §b%password%'
+    - ''
+    - '§7Запомните свой пароль или сделайте'
+    - '§7скриншот, чтобы не забыть - §cклавиша F2'
+auth_minimal_nick_length: '§cМинимальная длинна ника 4 символа'
+auth_not_allowed_nick_symbol:
+    - '§cВаш ник состоит из недопустимых символов'
+auth_password_length: '$auth_prefix$Введенный вами пароль должен быть не менее %min% и не более %max% символов'
+auth_dont_use_password: '$auth_prefix$Пожалуйста, если вы не хотите, чтобы вас взломали, не используйте пароли, начинающиеся с 12345'
+auth_wrong_case:
+    - '§cНеверно указаный ник, используйте %user_name%'
+
+auth_ip_address_is_used:
+    - '§cПод данным IP-адресом уже играет кто-то'
+auth_max_register_per_ip_limit:
+    - '§cВы больше не можете зарегистрировать аккаунт, посколько'
+    - '§cваш лимит аккаунтов исчерпан'
+auth_success_register: '$auth_prefix$Вы успешно зарегистрировались на проекте! §7(наведите сюда)'
+auth_success_register_hover:
+    - '§7Пароль: §b%password%'
+    - ''
+    - '§7Запомните свой пароль или сделайте'
+    - '§7скриншот, чтобы не забыть - §cклавиша F2'
+auth_passwords_not_match: '$auth_prefix$Пароли, которые вы ввели, не совпадают'
+auth_wrong_password: '$auth_prefix$Вы ввели неверный пароль, у вас еще есть %attempts%'
+auth_login_timeout: '§cВремя авторизации истекло, перезайдите на сервер'
+auth_account_banned:
+    - '§cВаш IP адрес был заблокирован на %time_left%'
 
 command_no_permission: '$main_prefix$Данная команда доступна от группы %group% §fи выше.'
 command_only_auth: '$main_prefix$Авторизируйтесь, чтобы использовать данную команду.'
