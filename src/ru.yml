@@ -242,6 +242,11 @@ lobby_items_fast_game_lore:
     - '§7чтобы быстро найти сервер'
     - ''
     - '§7Доступно от §b§lDIAMOND§7 и выше'
+lobby_items_shop_name: '§aМагазин'
+lobby_items_shop_lore:
+    - '§7Используйте этот предмет'
+    - '§7чтобы выбрать или купить'
+    - '§7набор, перк и многое другое'
 lobby_items_privileges_name: '§eПривилегии'
 lobby_items_privileges_lore:
     - '§7Используйте этот предмет'
