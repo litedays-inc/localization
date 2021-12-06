@@ -424,7 +424,7 @@ skywars_game_lobby_sidebar_title: '§e§lSKYWARS'
 skywars_game_lobby_sidebar_lines:
 - ''
 - '§fВаш уровень %skywars_level%'
-- '%ranked_has_played%
+- '%ranked_has_played%'
 - ''
 - '§7Статистика SkyWars:'
 - ' §fОдиночные убийства: §a%solo_total_kills%'
