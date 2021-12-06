@@ -205,7 +205,6 @@ friends_requests_gui_item_lore:
 # **************************************************************************************************
 #                                      Lobby
 # **************************************************************************************************
-
 servers_is_disabled: '§cОшибка, сервера данного режима недоступны!'
 
 lobby_board_title: '§e§lLiteDays'
@@ -302,16 +301,22 @@ menu_gamemode_hub_lore:
     - '§eНажмите, чтобы подключиться'
 menu_gamemode_hub_already_lore:
     - ''
-    - '§cВы уже находитесь в хабе!'
-menu_gamemode_selector_donate_name: 'Привилегии'
+    - '§7Вы уже находитесь в хабе!'
+menu_gamemode_selector_donate_name: '§bПривилегии'
 menu_gamemode_selector_donate_lore:
     - '§7Все возможности привилегий расписаны в'
     - '§7этом разделе, и на сайте нашего сервера'
     - ''
     - '§e▸ Нажмите, чтобы открыть'
-#===================================================
-#                     Games
-#===================================================
+
+menu_back_to_main_name: '§eВернуться назад'
+menu_back_to_main_lore:
+    - '§7Нажмите на данный предмет, чтобы'
+    - '§7вернуться на шаг назад'
+
+# **************************************************************************************************
+#                                       Utils Game
+# **************************************************************************************************
 kit_selector_item_name: '§aВыбор набора'
 kit_selector_item_lore:
     - '§7Используйте этот предмет'
@@ -321,3 +326,148 @@ hub_item_name: '§eВыход'
 hub_item_lore:
     - '§7Используйте этот предмет'
     - '§7чтобы покинуть арену'
+
+# **************************************************************************************************
+#                                        SkyWars
+# **************************************************************************************************
+skywars_cosmetic_rarity_lore: '§7Редкость: %rarity%'
+skywars_cosmetic_already_lore:
+    - '§7Данный предмет уже выбран!'
+skywars_cosmetic_click_to_set_lore:
+    - '§7Данный предмет у вас куплен'
+    - '§7и вы можете его выбрать'
+    - ''
+    - '§e▸ Нажмите, чтобы выбрать'
+skywars_cosmetic_buy_lore:
+    - '§7Цена предмета: §e%price%'
+    - ''
+    - '§e> Нажмите, чтобы купить'
+skywars_cosmetic_no_coins_lore:
+    - '§7Цена предмета: §e%price%'
+    - ''
+    - '§cУ вас недостаточно монеток!'
+skywars_cosmetic_only_ranked_lore:
+    - '§cДанный предмет можно получить'
+    - '§cтолько как награду в рейтинговом'
+    - '§cрежиме'
+
+skywars_shop_kits_name: '§aИгровые наборы'
+skywars_shop_kits_lore:
+    - ''
+    - '§7Игровые наборы которые будут выданы'
+    - '§7при начале игры, с помощью них вы'
+    - '§7можете использовать различные тактики'
+    - '§7и стратегии'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_perks_name: '§aУмения'
+skywars_shop_perks_lore:
+    - ''
+    - '§7Умения дают вам дополнительные'
+    - '§7способности, вещи, награды для'
+    - '§7большего шанса победить в игре'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_cages_name: '§aКлетки'
+skywars_shop_cages_lore:
+    - ''
+    - '§7Покажите всем игрокам свою крутую'
+    - '§7клетку, чтобы все игроки поняли'
+    - '§7вашу крутость'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_project_trails_name: '§aСледы от снаряда'
+skywars_shop_project_trails_lore:
+    - ''
+    - '§7Следы от снаряда будут показаны после'
+    - '§7того как вы кинете снежок, удочку'
+    - '§7или что-то другое'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_victory_dances_name: '§aПобедные танцы'
+skywars_shop_victory_dances_lore:
+    - ''
+    - '§7Победный танец который будет показан'
+    - '§7всем игрокам после вашей победы в игре'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_kill_effects_name: '§aЭффекты при убийстве'
+skywars_shop_kill_effects_lore:
+    - ''
+    - '§7Эффект который появится после убийства'
+    - '§7игрока'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_levels_name: '§dУровни'
+skywars_shop_levels_lore:
+    - '§7Посмотрите информацию о вашем SkyWars уровне'
+    - '§7или выберите ваш значок престижа'
+    - ''
+    - '§7Прогресс: §b%skywars_user_current_exp%§7/§a%skywars_level_exp%'
+    - '%prestige% §8[ %progress_bar% §8]'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_ranked_info_name: '§bНаграды Ranked'
+skywars_shop_ranked_info_lore:
+    - '§8Сезон Ranked %season%'
+    - ''
+    - '§7Текущий рейтинг: §e%rating%'
+    - ''
+    - '§7Всего Ranked побед: §e%ranked_wins%'
+    - '§7Всего Ranked убийств: §e%ranked_kills%'
+    - ''
+    - '§e▸ Нажмите, чтобы посмотреть награды'
+
+skywars_game_lobby_sidebar_ranked_played: '§7Рейтинг: §a%rating%' 
+
+skywars_game_lobby_sidebar_title: '§e§lSKYWARS'
+skywars_game_lobby_sidebar_lines:
+- ''
+- '§fВаш уровень %skywars_level%'
+- '%ranked_has_played%
+- ''
+- '§7Статистика SkyWars:'
+- ' §fОдиночные убийства: §a%solo_total_kills%'
+- ' §fОдиночные победы: §a%solo_total_wins%'
+- ' §fРейтинговые убийства: §a%ranked_total_kills%'
+- ' §fРейтинговые победы: §a%ranked_total_wins%'
+- ''
+- '§fЗолота: §6%user_golds%'
+- '§fМонеток: §e%user_coins%'
+- ''
+- '§ewww.litedays.net'
+
+# потом сделаю
+skywars_cosmetic_fireworks_victory_dance_name: 'Фейерверки'
+skywars_cosmetic_fireworks_victory_dance_lore:
+    - ''
+skywars_cosmetic_night_shift_victory_dance_name: 'Ночная смена'
+skywars_cosmetic_night_shift_victory_dance_lore:
+    - ''
+skywars_cosmetic_dragon_victory_dance_name: 'Дракон'
+skywars_cosmetic_dragon_victory_dance_lore:
+    - ''
+skywars_cosmetic_anvil_rain_victory_dance_name: 'Дождь из наковален'
+skywars_cosmetic_anvil_rain_victory_dance_lore:
+    - ''
+skywars_cosmetic_blood_killeffect_name: 'Частицы крови'
+skywars_cosmetic_blood_killeffect_lore:
+    - ''
+skywars_cosmetic_heart_killeffect_name: 'Сердца'
+skywars_cosmetic_heart_killeffect_lore:
+    - ''
+skywars_cosmetic_squid_killeffect_name: 'Спрут'
+skywars_cosmetic_squid_killeffect_lore:
+    - ''
+skywars_cosmetic_default_cage_name: 'Стандартная'
+skywars_cosmetic_default_cage_lore:
+    - ''
+skywars_cosmetic_slime_cage: 'Фейерверки'
+skywars_cosmetic_slime_lore:
+    - ''
+skywars_cosmetic_heart_trail_name: 'Сердца'
+skywars_cosmetic_heart_trail_lore:
+    - ''
+skywars_cosmetic_notes_trail_name: 'Нотки'
+skywars_cosmetic_notes_trail_lore:
+    - ''
