@@ -383,7 +383,7 @@ skywars_cosmetic_click_to_set_lore:
 skywars_cosmetic_buy_lore:
     - '§7Цена предмета: §e%price%'
     - ''
-    - '§e> Нажмите, чтобы купить'
+    - '§e▸ Нажмите, чтобы купить'
 skywars_cosmetic_no_coins_lore:
     - '§7Цена предмета: §e%price%'
     - ''
