@@ -265,6 +265,15 @@ lobby_board_lines:
 - ''
 - '§ewww.litedays.net'
 
+lobby_selector_item_lore:
+    - ''
+    - '§7Онлайн лобби: §f%online%'
+    - ''
+lobby_selector_item_lore_friends: '§7Друзья на сервере:'
+lobby_selector_item_lore_friends_format: ' §8◾ §r%friend_displayname%'
+lobby_selector_already_server_lore: '§aВы уже находитесь здесь'
+lobby_selector_click_to_teleport_lore: '§e‣ Нажмите, чтобы телепортироваться'    
+
 lobby_items_game_selector_name: '§aВыбор режима'
 lobby_items_game_selector_lore:
     - '§7Используйте этот предмет'
