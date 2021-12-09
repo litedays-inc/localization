@@ -474,54 +474,29 @@ skywars_game_lobby_sidebar_ranked_played: '§7Рейтинг: §a%rating%'
 skywars_game_lobby_sidebar_title: '§e§lSKYWARS'
 skywars_game_lobby_sidebar_lines:
 - ''
-- '§fВаш уровень %skywars_level%'
+- '§fВаш уровень: %skywars_level%'
 - '%ranked_has_played%'
 - ''
-- '§7Статистика SkyWars:'
-- ' §fОдиночные убийства: §a%solo_total_kills%'
-- ' §fОдиночные победы: §a%solo_total_wins%'
-- ' §fРейтинговые убийства: §a%ranked_total_kills%'
-- ' §fРейтинговые победы: §a%ranked_total_wins%'
+- '§fОдиночные убийства: §a%solo_total_kills%'
+- '§fОдиночные победы: §a%solo_total_wins%'
+- '§fРейтинговые убийства: §a%ranked_total_kills%'
+- '§fРейтинговые победы: §a%ranked_total_wins%'
 - ''
-- '§fЗолота: §6%user_golds%'
-- '§fМонеток: §e%user_coins%'
+- '§fДуш: §b%souls%§7/%maxSouls%'
+- '§fМонеток: §a%user_coins%'
 - ''
 - '§ewww.litedays.net'
 
 # потом сделаю
 skywars_cosmetic_fireworks_victory_dance_name: 'Фейерверки'
-skywars_cosmetic_fireworks_victory_dance_lore:
-    - ''
 skywars_cosmetic_night_shift_victory_dance_name: 'Ночная смена'
-skywars_cosmetic_night_shift_victory_dance_lore:
-    - ''
 skywars_cosmetic_dragon_victory_dance_name: 'Дракон'
-skywars_cosmetic_dragon_victory_dance_lore:
-    - ''
 skywars_cosmetic_anvil_rain_victory_dance_name: 'Дождь из наковален'
-skywars_cosmetic_anvil_rain_victory_dance_lore:
-    - ''
 skywars_cosmetic_blood_killeffect_name: 'Частицы крови'
-skywars_cosmetic_blood_killeffect_lore:
-    - ''
 skywars_cosmetic_head_rocket_killeffect_name: 'Вылетающая голова'
-skywars_cosmetic_head_rocket_killeffect_lore:
-    - ''
 skywars_cosmetic_heart_killeffect_name: 'Сердца'
-skywars_cosmetic_heart_killeffect_lore:
-    - ''
 skywars_cosmetic_squid_killeffect_name: 'Спрут'
-skywars_cosmetic_squid_killeffect_lore:
-    - ''
 skywars_cosmetic_default_cage_name: 'Стандартная'
-skywars_cosmetic_default_cage_lore:
-    - ''
-skywars_cosmetic_slime_cage: 'Фейерверки'
-skywars_cosmetic_slime_lore:
-    - ''
+skywars_cosmetic_slime_cage_name: 'Слаймовая'
 skywars_cosmetic_heart_trail_name: 'Сердца'
-skywars_cosmetic_heart_trail_lore:
-    - ''
 skywars_cosmetic_notes_trail_name: 'Нотки'
-skywars_cosmetic_notes_trail_lore:
-    - ''
