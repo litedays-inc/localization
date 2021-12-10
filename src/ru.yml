@@ -455,7 +455,7 @@ skywars_shop_levels_lore:
     - '§7или выберите ваш значок престижа'
     - ''
     - '§7Прогресс: §b%skywars_user_current_exp%§7/§a%skywars_level_exp%'
-    - '%prestige% §8[ %progress_bar% §8]'
+    - '§8[ %progress_bar% §8]'
     - ''
     - '§e▸ Нажмите, чтобы открыть'
 skywars_shop_ranked_info_name: '§bНаграды Ranked'
