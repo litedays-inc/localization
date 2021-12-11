@@ -538,7 +538,7 @@ skywars_prestige_not_level_lore:
     - '§cЧтобы разблокировать данный престиж, вам'
     - '§cнеобходим %required_level% уровень'
 
-skywars_message_player_joined: '$skywars_prefix$%user_display_name% §fприсоединился к игре §7(%current_players%/
+skywars_message_player_joined: '$skywars_prefix$%user_display_name% §fприсоединился к игре §7(%current_players%/%max_players%'
 skywars_message_cage_starting: '$skywars_prefix$Открытие клеток через: §a%time% §f%format%'
 skywars_message_waiting_starting: '$skywars_prefix$Начало игры через §a%time% §r%format%'
 skywars_message_information_corrupted:
