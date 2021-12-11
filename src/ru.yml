@@ -537,3 +537,26 @@ skywars_prestige_not_level_angel_of_death_lore:
 skywars_prestige_not_level_lore: 
     - '§cЧтобы разблокировать данный престиж, вам'
     - '§cнеобходим %required_level% уровень'
+
+skywars_message_player_joined: '$skywars_prefix$%user_display_name% §fприсоединился к игре §7(%current_players%/
+skywars_message_cage_starting: '$skywars_prefix$Открытие клеток через: §a%time% §f%format%'
+skywars_message_waiting_starting: '$skywars_prefix$Начало игры через §a%time% §r%format%'
+skywars_message_information_corrupted:
+    - '     §fДанная игра является §5испорченной §fпоэтому'
+    - '    §fполученный §dопыт §fи §6монеты §fбудут удвоены'
+    - ''
+skywars_message_information:
+    - ''
+    - '                      §b§lSkyWars'
+    - '      §fСобирайте ресурсы и оборудование на вашем острове'
+    - '         §fчтобы устранить всех остальных игроков.'
+    - ' §fОтправляйтесь на центральный остров за специальными сундуками'
+    - '                 §fособыми предметами!'
+    - ''
+skywars_message_information_teaming: '§c§lВнимание! §cВ данном режиме запрещено обьединяться в команды, §cпри нарушение админстрация проекта может вас наказать'
+
+skywars_title_game_starting: '%time%;§fДо начало игры!'
+skywars_title_game_started: '§aИгра началась;§7Уничтожьте всех врагов!'
+skywars_title_game_ended_victory: '§aПОБЕДА;§7Вы победили эту игру!'
+skywars_title_game_player_died: '§c§lВЫ ПОГИБЛИ;§7Теперь вы наблюдатель :('
+skywars_title_game_player_died_by_target: '§c§lВЫ ПОГИБЛИ;§7Вас убил игрок %killer_display_name%'
