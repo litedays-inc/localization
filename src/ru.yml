@@ -499,7 +499,7 @@ skywars_cosmetic_heart_killeffect_name: 'Сердца'
 skywars_cosmetic_squid_killeffect_name: 'Ракета из осьминога'
 skywars_cosmetic_final_smash_killeffect_name: 'Финальный удар'
 skywars_cosmetic_lighting_killeffect_name: 'Молния'
-skywars_cosmetic_fountain_killeffect_name: 'Фонтан из печенек'
+skywars_cosmetic_fountain_cookie_killeffect_name: 'Фонтан из печенек'
 skywars_cosmetic_fly_message_killeffect_name: 'Воздущное сообщение'
 
 # клетки
