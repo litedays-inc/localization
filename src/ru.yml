@@ -495,6 +495,7 @@ skywars_cosmetic_head_rocket_killeffect_name: 'Вылетающая голова
 skywars_cosmetic_heart_killeffect_name: 'Сердца'
 skywars_cosmetic_squid_killeffect_name: 'Спрут'
 skywars_cosmetic_default_cage_name: 'Стандартная'
+skywars_cosmetic_final_smash_killeffect_name: 'Финальный удар'
 skywars_cosmetic_slime_cage_name: 'Слаймовая'
 skywars_cosmetic_heart_trail_name: 'Сердца'
 skywars_cosmetic_notes_trail_name: 'Нотки'
@@ -537,6 +538,19 @@ skywars_prestige_not_level_angel_of_death_lore:
 skywars_prestige_not_level_lore: 
     - '§cЧтобы разблокировать данный престиж, вам'
     - '§cнеобходим %required_level% уровень'
+
+skywars_cosmetic_killeffect_lore:
+    - '§7та хер его знает, короче киллэффект'
+    - '§7под названием §a%name% §7очень крутой'
+skywars_cosmetic_victory_dance_lore:
+    - '§7та хер его знает, короче победный танец'
+    - '§7под названием §a%name% §7очень крутой'
+skywars_cosmetic_arrow_lore:
+    - '§7та хер его знает, короче след от снаряда'
+    - '§7под названием §a%name% §7очень крутой'
+skywars_cosmetic_cage_lore:
+    - '§7та хер его знает, короче клетка'
+    - '§7под названием §a%name% §7очень крутой'
 
 skywars_message_player_joined: '$skywars_prefix$%user_display_name% §fприсоединился к игре §7(%current_players%/%max_players%'
 skywars_message_cage_starting: '$skywars_prefix$Открытие клеток через: §a%time% §f%format%'
