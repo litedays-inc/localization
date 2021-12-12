@@ -485,21 +485,44 @@ skywars_game_lobby_sidebar_lines:
 - ''
 - '§ewww.litedays.net'
 
-# потом сделаю
+# победные танцы
 skywars_cosmetic_fireworks_victory_dance_name: 'Фейерверки'
 skywars_cosmetic_night_shift_victory_dance_name: 'Ночная смена'
 skywars_cosmetic_dragon_victory_dance_name: 'Дракон'
 skywars_cosmetic_anvil_rain_victory_dance_name: 'Дождь из наковален'
-skywars_cosmetic_blood_killeffect_name: 'Частицы крови'
+
+# киллэффекты
+skywars_cosmetic_tnt_killeffect_name: 'Взрыв'
+skywars_cosmetic_blood_killeffect_name: 'Кровавый взрыв'
 skywars_cosmetic_head_rocket_killeffect_name: 'Вылетающая голова'
 skywars_cosmetic_heart_killeffect_name: 'Сердца'
-skywars_cosmetic_squid_killeffect_name: 'Спрут'
-skywars_cosmetic_default_cage_name: 'Стандартная'
+skywars_cosmetic_squid_killeffect_name: 'Ракета из осьминога'
 skywars_cosmetic_final_smash_killeffect_name: 'Финальный удар'
+skywars_cosmetic_lighting_killeffect_name: 'Молния'
+skywars_cosmetic_fountain_killeffect_name: 'Фонтан из печенек'
+skywars_cosmetic_fly_message_killeffect_name: 'Воздущное сообщение'
+
+# клетки
+skywars_cosmetic_default_cage_name: 'Стандартная'
 skywars_cosmetic_slime_cage_name: 'Слаймовая'
+
+# траилы
 skywars_cosmetic_heart_trail_name: 'Сердца'
 skywars_cosmetic_notes_trail_name: 'Нотки'
+skywars_cosmetic_fire_trail_name: 'Пламя'
+skywars_cosmetic_green_star_trail_name: 'Зеленые частицы'
+skywars_cosmetic_village_angry_trail_name: 'Злой житель'
+skywars_cosmetic_slime_trail_name: 'Слайм'
+skywars_cosmetic_fire_spiral_trail_name: 'Огненная спираль'
+skywars_cosmetic_blood_spiral_trail_name: 'Кровяная спираль'
+skywars_cosmetic_potion_trail_name: 'Зелье'
+skywars_cosmetic_water_drip_trail_name: 'Капли воды' 
+skywars_cosmetic_lava_drip_trail_name: 'Капли лавы'
+skywars_cosmetic_magic_trail_name: 'Магия энда'
+skywars_cosmetic_smoke_trail_name: 'Дым'
+skywars_cosmetic_enchanting_trail_name: 'Зачарования'
 
+# престижи от уровня
 skywars_prestige_default_name: '§eСтандартный'
 skywars_prestige_angel_i_name: 'Ангел смерти I'
 skywars_prestige_angel_ii_name: 'Ангел смерти II'
@@ -539,7 +562,7 @@ skywars_prestige_not_level_lore:
     - '§cЧтобы разблокировать данный престиж, вам'
     - '§cнеобходим %required_level% уровень'
 
-skywars_cosmetic_killeffect_lore:
+skywars_cosmetic_kill_effect_lore:
     - '§7та хер его знает, короче киллэффект'
     - '§7под названием §a%name% §7очень крутой'
 skywars_cosmetic_victory_dance_lore:
