@@ -5,4 +5,4 @@ command_only_auth: '$main_prefix$Авторизируйтесь, чтобы ис
 command_block_this_server: '$main_prefix$§cДанная команда заблокирована на данном сервере!'
 
 test:
-- 'я лох'
+- ''
