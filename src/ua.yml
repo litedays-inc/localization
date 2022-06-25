@@ -1,8 +1,596 @@
-main_prefix: '§6Server §8| §r'
+main_prefix: '§6LiteDays §8| §r'
+admin_prefix: '§cАдмiнiстрацiя §8| §r'
+friends_prefix: '§eДрузi §8| §r'
+auth_prefix: '§6Авторiзацiя §8| §r'
 
-command_no_permission: '$main_prefix$This command is available from privilege %group% §fand higher..'
-command_only_auth: '$main_prefix$ебани мамонта, чтобы войти.'
+auth_not_registered: '$auth_prefix$§cВи повинні бути зареєстрованими, щоб використати цю команду'
+auth_not_authorized: '$auth_prefix$§cВи повинні бути авторизовані, щоб використати цю команду'
+auth_already_registered: '$auth_prefix$§cВи вже зареєстровані'
+auth_already_login: '$auth_prefix$§cВи вже авторизовані на сервері'
+auth_logout:
+    - '§cВи вийшли зі свого облікового запису'
+auth_command_login_use: '$auth_prefix$§eПожалуйста, авторизуйтесь на сервер с помощью команды §b/login <пароль>'
+auth_command_register_use: '$auth_prefix$§eВам необходимо зарегистрироваться, используйте §b/register <пароль> <повтор пароля>'
+auth_changepassword_use: '$auth_prefix$§eНеверно введены аргументы команды, используйте §b/changepassword <пароль> <повтор пароля>'
+auth_changepassword_wrong_password: '$auth_prefix$§cПароли не совпадают!'
+auth_change_password: '$auth_prefix$§aВаш пароль успешно изменен!'
+auth_change_password_hover:
+    - '§7Пароль: §b%password%'
+    - ''
+    - '§7Запомните свой пароль или сделайте'
+    - '§7скриншот, чтобы не забыть - §cклавиша F2'
+auth_minimal_nick_length: '§cМинимальная длинна ника 4 символа'
+auth_not_allowed_nick_symbol:
+    - '§cВаш ник состоит из недопустимых символов'
+auth_password_length: '$auth_prefix$Введенный вами пароль должен быть не менее %min% и не более %max% символов'
+auth_dont_use_password: '$auth_prefix$Пожалуйста, если вы не хотите, чтобы вас взломали, не используйте пароли, начинающиеся с 12345'
+auth_wrong_case:
+    - '§cНеверно указаный ник, используйте %user_name%'
+
+auth_ip_address_is_used:
+    - '§cПод данным IP-адресом уже играет кто-то'
+auth_max_register_per_ip_limit:
+    - '§cВы больше не можете зарегистрировать аккаунт, посколько'
+    - '§cваш лимит аккаунтов исчерпан'
+auth_success_register: '$auth_prefix$Вы успешно зарегистрировались на проекте! §7(наведите сюда)'
+auth_success_register_hover:
+    - '§7Пароль: §b%password%'
+    - ''
+    - '§7Запомните свой пароль или сделайте'
+    - '§7скриншот, чтобы не забыть - §cклавиша F2'
+auth_passwords_not_match: '$auth_prefix$Пароли, которые вы ввели, не совпадают'
+auth_wrong_password: '$auth_prefix$Вы ввели неверный пароль, у вас еще есть %attempts%'
+auth_login_timeout: '§cВремя авторизации истекло, перезайдите на сервер'
+auth_account_banned:
+    - '§cВаш IP адрес был заблокирован на %time_left%'
+
+command_no_permission: '$main_prefix$Данная команда доступна от группы %group% §fи выше.'
+command_only_auth: '$main_prefix$Авторизируйтесь, чтобы использовать данную команду.'
 command_block_this_server: '$main_prefix$§cДанная команда заблокирована на данном сервере!'
+command_sub_not_found: '$main_prefix$Данная подкоманда не обнаружена.'
+command_user_offline: '$main_prefix$Данный игрок никогда прежде не играл на нашем проекте!'
+command_player_offline: '$main_prefix$%target% §fне найден, возможно, он не в сети или находится на недоступном вам сервере.'
 
-test:
+group_already_default: '§cОшибка, у игрока %player% §cнет группы'
+group_changes_broadcast: '$admin_prefix$%user_display_name% §7изменил группу игрока %target_display_name% §7на %group_changed%'
+group_rank_admin: '§cОшибка, вы не можете выдавать группу администратора'
+group_change_rank_admin: '§cОшибка, вы не можете изменить группу игрока %player%'
+group_success_set: 'Группа %group% §rбыла успешно установлена игроку %player%'
+group_already_exists: '§cОшибка, у игрока %player% §cуже имеется данная группа'
+group_cant_give_group_yourself: '§cОшибка, вы не можете изменить свою группу'
+
+user_not_loaded: '§cОшибка при загрузке данных..'
+user_whitelist_kick:
+- '§cНа данный момент на сервере введется бета-тестирование'
+- '§cвход доступен только для персонала'
+
+core_disconnected: '$core_prefix$Соединение с игровым координатором потеряно! В ближайшую минуту вам могут быть недоступны некоторые команды а также перемещение между серверами. Мы сообщим, как только соединение восстановится'
+core_disconnected_title: '§cСоединение потеряно;§fПотеряно соединение с главным ядром!'
+
+core_server_is_not_found: '§cДанный сервер не обнаружен в системе, подключение невозможно!' 
+core_server_is_disabled: '§cДанный сервер выключен, подключение невозможно!'
+
+core_connected_motd:
+- '    §6§lLiteDays §8| §ewww.litedays.net §8| §a1.8-1.17'
+- '               §fЗакрытое бета-тестирование'
+core_not_connected_motd:
+- '§cИгровой координатор потерял'
+- '§cсоединение с главным ядром!'
+
+core_not_connected_kick:
+- '§cСетевое общение с главным ядром потеряно'
+- '§cВ настоящий момент вход на сервер невозможен'
+
+core_successfully_connected: '$core_prefix$§aСоединение с главным ядром восстановлено, приятной игры!'
+core_successfully_connected_title: '§aСоединение восстановлено;§fПриятной игры!'
+
+user_connecting_to_server: '§aПодключение на %server_name%..'
+
+tab_header:
+- '§6§lLiteDays'
 - ''
+- '§7Сайт: §elitedays.net'
+- '§7ВК: §bvk.com/litedays'
+- ''
+tab_footer:
+- ''
+- '§7Онлайн сервера: §a%server_online%'
+- '§7Вы находитесь на сервере:'
+- '§b%server_name%'
+- ''
+
+command_default: '$main_prefix$Вы указали неверные агрументы, используйте §a%arg%'
+command_stream_add_format: '/stream add <ссылка>'
+command_stream_remove_format: '/stream remove'
+stream_unknown_url: '$main_prefix$Ссылка на трансляцию введена неверно, проверьте её перед использованием!'
+stream_add_success: '$main_prefix$§fТрансляция успешно добавлена на сервер!'
+stream_remove_success: '$main_prefix$Вы успешно удалили свою трансляцию!'
+stream_already_streaming: '$main_prefix$Вы уже ведёте активную трансляцию, используйте §a%arg%§f, чтобы удалить трансляцию.'
+stream_not_streaming: '$main_prefix$Вы не ведёте активную трансляцию!'
+stream_get_url: '$main_prefix$Ссылка на трансляцию: §a%stream_url%'
+
+prefix_changed_to: '$main_prefix$Вы успешно сменили префикс на %prefix%§f!' 
+prefix_reset: '$main_prefix$Вы успешно сменили свой префикс на §7Стандартный§f!'
+
+lvl_command:
+- '$main_prefix$У вас §d%level% §fуровень'
+- '$main_prefix$До следующего уровня необходимо §a%total_exp% §fопыта'
+lvl_up_title: '§a§l§kX§c§l УРОВЕНЬ ПОВЫШЕН §a§l§kX§r'
+lvl_up_subtitle: '§fВы достигли §b%new_level% §fуровня'
+lvl_up_message:
+- ''
+- '          §b§kX§c§l НОВЫЙ УРОВЕНЬ §b§kX'
+- '  §fВы достигли §d%new_level% §fуровня!'
+- '  §fДо следующего уровня необходимо §a%total_exp% §fопыта'
+- ''
+- ''
+
+group_help:
+- '§6LiteDays §8| §fСписок доступных команд:'
+- ' §e/group set <ник игрока> <группа> §7- §fустановить группу игроку'
+- ' §e/group merge <ник игрока> <новый ник игрока> §7- §fперенести группу игроку'
+- ' §e/group get <ник игрока> §7- §fузнать группу игрока'
+- ' §e/group list §7- §fпосмотреть список групп'
+streams_help:
+- '§6Streams §8| §fСписок доступных команд:'
+- ' §e/stream add <ссылка> §7- §fдобавить трансляцию'
+- ' §e/stream remove §7- §fудалить текущую трансляцию'
+- ' §e/streams §7- §fактивные трансляции'
+streams_new_announce:
+- '§7§m--------------------------------------------'
+- ''
+- '   §fСтример %streamer% §fзапустил трансляцию'
+- '   §fна которой §a%stream_viewers% §fзрителей'
+- ''
+- '   §7Нажмите, чтобы открыть трансляцию'
+- ''
+- '§7§m--------------------------------------------'
+streams_announce:
+- ''
+- ' §c§lВНИМАНИЕ! §fНа данный момент на сервере'
+- ' §fпроходит §a%count% §fтрансляций, нажмите'
+- ' §fчтобы открыть список трансляций'
+- ''
+streams_gui_entry_name: '§eСтрим игрока %user_display_name%'
+streams_gui_entry_lore:
+- ''
+- '§7Название: §f%stream_title%'
+- '§7Зрителей: §a%stream_viewers%'
+- ''
+- '§7Длительность: §f%stream_time%'
+- ''
+- '§e▸ Нажмите, чтобы получить ссылку'
+
+command_friend_add_format: '/friend add <ник игрока>'
+command_friend_remove_format: '/friend remove <ник игрока>'
+command_friend_accept_format: '/friend accept <ник игрока>'
+command_friend_deny_format: '/friend deny <ник игрока>'
+command_friend_teleport_format: '/friend teleport <ник игрока>'
+friends_list_no_friends: '§cОшибка, список друзей пуст :('
+friends_duplicate_request: '$friends_prefix$Данный игрок уже предлагал Вам стать друзьями.'
+friends_target_has_request: '$friends_prefix$Вы уже отправляли запрос в друзья данному игроку.'
+friends_already_friend: '$friends_prefix$Вы уже являетесь друзьями!'
+friends_not_already_friend: '$friends_prefix$Вы не можете использовать данное действие с игроком, так как вы не являетесь друзьями!'
+friends_error_yourself: '$friends_prefix$Вы не можете кинуть запрос в друзья самому себе!'
+friends_add_success: '$friends_prefix$Вы успешно отправили запрос в друзья игроку %target%§f!'
+friends_remove_success: '$friends_prefix$Вы успешно удалили %target% §fиз списка друзей!'
+friends_not_has_request: '$friends_prefix$Увы, этот игрок не отправил вам запрос в друзья!'
+friends_accept_success_yourself: '$friends_prefix$Вы успешно приняли запрос в друзья от игрока %target%§f!'
+friends_accept_success: '$friends_prefix$Вы успешно стали друзьями с %target%§f. §eПоздравляем!'
+friends_deny_success_yourself: '$friends_prefix$Вы успешно отклонили запрос в друзья от игрока %target%§f!'
+friends_deny_success: '$friends_prefix$%target% §fотклонил ваш запрос в друзья. §7Он не знает, что он потерял :('
+friends_notification_join: '$friends_prefix$%friend% §fзашёл на сервер!'
+friends_notification_quit: '$friends_prefix$%friend% §fвышел с сервера!'
+friends_help:
+- '$friends_prefix$§fСписок доступных команд:'
+- ' §e/friend requests §7- §fоткрыть список заявок'
+- ' §e/friend accept <ник> §7- §fпринять игрока в друзья'
+- ' §e/friend deny <ник> §7- §fотклонить запрос игрока'
+- ' §e/friend add <ник> §7- §fдобавить игрока в друзья'
+- ' §e/friend remove <ник> §7- §fдобавить игрока в друзья'
+- ' §e/friend teleport <ник> §7- §fтелепортироваться на сервер друга'
+friends_notification_requests:
+- '$friends_prefix$У вас есть §a%count% §fнеотвеченных заявок в друзья!'
+
+friends_gui_information_name: '§aОбщая информация'
+friends_gui_information_lore:
+- '§7Всего друзей: §a%count%'
+- '§7В сети: §a%online%'
+
+friends_filter_type_by_donate_group: 'Только с платным статусом'
+friends_filter_type_by_universal_group: 'Только с универсальным статусом'
+friends_filter_type_no_filter: 'Без фильтра'
+friends_gui_item_filter_name: '§aФильтр списка'
+friends_gui_item_filter_lore:
+- ''
+- '§7С помощью этой функции вы можете'
+- '§7отфильтровать список своих друзей'
+- '§7по своему усмотрению'
+- ''
+- '§7Текущий фильтр: §a%current_filter_name%'
+- ''
+- '§e▸ ЛКМ, чтобы перейти к следующей'
+- '§e▸ ПКМ, чтобы перейти к предыдущей'
+
+friends_gui_item_requests_name: '§aАктивные запросы в друзья'
+friends_gui_item_requests_lore:
+- ''
+- '§7В этом меню вы можете просматривать'
+- '§7запросы в друзья от различных игроков,'
+- '§7а также взаимодействовать с ними,'
+- '§7то есть принимать или же отклонять.'
+- ''
+- '§7Всего запросов: §a%friends_requests_count%'
+- ''
+- '§e▸ Нажмите, чтобы открыть меню'
+
+friends_sorting_type_by_online: 'По онлайну'
+friends_sorting_type_by_status: 'По статусу'
+friends_gui_item_sorting_name: '§aСортировка списка'
+friends_gui_item_sorting_lore:
+- ''
+- '§7С помощью этой функции вы можете'
+- '§7отсортировать список своих друзей'
+- '§7по своему усмотрению'
+- ''
+- '§7Текущая сортировка: §a%current_sorting_name%'
+- ''
+- '§e▸ ЛКМ, чтобы перейти к следующей'
+- '§e▸ ПКМ, чтобы перейти к предыдущей'
+
+friends_requests_gui_item_name: '%user_displayname%'
+friends_requests_gui_item_lore:
+- ''
+- '§e▸ ЛКМ, чтобы принять запрос'
+- '§e▸ ПКМ, чтобы отклонить запрос'
+
+# **************************************************************************************************
+#                                      Lobby
+# **************************************************************************************************
+servers_is_disabled: '§cОшибка, сервера данного режима недоступны!'
+
+lobby_board_title: '§e§lLiteDays'
+lobby_board_lines:
+- ''
+- '§fСтатус: %user_group_name%'
+- ''
+- '§fЗолота: §6%user_golds%'
+- '§fМонеток: §e%user_coins%'
+- ''
+- '§fВаш уровень: §d%user_level%'
+- ' §8[ %level_progress_bar% §8] §a%level_procent%%'
+- ''
+- '§fОнлайн в хабе: §a%server_online%'
+- '§fОбщий онлайн: §a%global_online%'
+- ''
+- '§ewww.litedays.net'
+
+lobby_selector_item_lore:
+    - ''
+    - '§7Онлайн лобби: §f%online%'
+    - ''
+lobby_selector_item_lore_friends: '§7Друзья на сервере:'
+lobby_selector_item_lore_friends_format: ' §8◾ §r%friend_displayname%'
+lobby_selector_already_server_lore: '§aВы уже находитесь здесь'
+lobby_selector_click_to_teleport_lore: '§e‣ Нажмите, чтобы телепортироваться'    
+
+lobby_items_game_selector_name: '§aВыбор режима'
+lobby_items_game_selector_lore:
+    - '§7Используйте этот предмет'
+    - '§7для выбора режима'
+lobby_items_profile_name: '§eПрофиль игрока %user_display_name%'
+lobby_items_profile_lore:
+    - '§7Используйте этот предмет'
+    - '§7для получение информации о вас'
+lobby_items_gadgets_name: '§aГаджеты'
+lobby_items_gadgets_lore:
+    - '§7Уникальная косметика для'
+    - '§7развлечения в лобби'
+lobby_items_fast_game_name: '§aБыстрая игра'
+lobby_items_fast_game_lore:
+    - '§7Используйте этот предмет'
+    - '§7чтобы быстро найти сервер'
+    - ''
+    - '§7Доступно от §b§lDIAMOND§7 и выше'
+lobby_items_shop_name: '§aМагазин'
+lobby_items_shop_lore:
+    - '§7Используйте этот предмет'
+    - '§7чтобы выбрать или купить'
+    - '§7набор, перк и многое другое'
+lobby_items_privileges_name: '§eПривилегии'
+lobby_items_privileges_lore:
+    - '§7Используйте этот предмет'
+    - '§7для просмотра привилегий'
+lobby_items_lobby_selector_name: '§eВыбор лобби'
+lobby_items_lobby_selector_lore:
+    - '§7Используйте этот предмет'
+    - '§7для смены игрового лобби'
+
+menu_gamemode_selector_click_to_connect: '§e▸ Нажмите, чтобы присоединиться!'
+menu_gamemode_selector_disabled_servers: '§cСервера указанного режима отключены!'
+menu_gamemode_selector_on_development: '§cДанный режим находится в разработке'
+
+menu_gamemode_selector_skywars_description:
+    - '§7Каждый игрок появляется на отдельном'
+    - '§7острове. Ищите вещи в сундуках'
+    - '§7и устраните всех противников'
+menu_gamemode_selector_bedwars_description:
+    - '§7Сражение между несколькими командами'
+    - '§7за право на возрождение! Защитите'
+    - '§7свою кровать и уничтожьте другие,'
+    - '§7если хотите победить...'
+menu_gamemode_selector_smasher_description:
+    - '§7Этот режим, который не даст заскучать,' 
+    - '§7зарабатывай монетки за убийство игроков'
+    - '§7прокачивай свое оружие, броню, выбивайся'
+    - '§7в топ, чтобы показать кто тут батя!' 
+menu_gamemode_selector_anarchy_description:
+    - '§7Выживай на единственном сервере'
+    - '§7без КРЕАТИВА! Строй свои базы,'
+    - '§7ходи на рейды, собирай аирдропы и'
+    - '§7переживай случайные события!'
+    - ''
+    - '§cУстановленная версия для игры на'
+    - '§cданном режиме - 1.16'
+menu_gamemode_selector_skyblock_description:
+    - '§7Начни игру на острове в небе и развивайся.'
+    - '§7Выполняй задания, торгуй с другими игроками...'
+    - '§7Приглашай друзей в совместную игру и построй' 
+    - '§7и построй лучший остров!'
+menu_gamemode_selector_luckywars_description:
+    - '§7В этой игре ваша цель состоит в том,'
+    - '§7чтобы разбивать блоки блоков,'
+    - '§7собирать классные вещи и убивать всех противников'
+menu_gamemode_selector_lore:
+    - '§7Онлайн режима: §B%online%'
+    - ''
+    - '%status_on_server%'
+   
+menu_gamemode_hub_name: '§a%server%'
+menu_gamemode_hub_lore:
+    - ''
+    - '§eНажмите, чтобы подключиться'
+menu_gamemode_hub_already_lore:
+    - ''
+    - '§7Вы уже находитесь в хабе!'
+menu_gamemode_selector_donate_name: '§bПривилегии'
+menu_gamemode_selector_donate_lore:
+    - '§7Все возможности привилегий расписаны в'
+    - '§7этом разделе, и на сайте нашего сервера'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+
+menu_back_to_main_name: '§eВернуться назад'
+menu_back_to_main_lore:
+    - '§7Нажмите на данный предмет, чтобы'
+    - '§7вернуться на шаг назад'
+
+# **************************************************************************************************
+#                                       Utils Game
+# **************************************************************************************************
+kit_selector_item_name: '§aВыбор набора'
+kit_selector_item_lore:
+    - '§7Используйте этот предмет'
+    - '§7чтобы выбрать набор для'
+    - '§7игры'
+hub_item_name: '§eВыход'
+hub_item_lore:
+    - '§7Используйте этот предмет'
+    - '§7чтобы покинуть арену'
+
+# **************************************************************************************************
+#                                        SkyWars
+# **************************************************************************************************
+skywars_cosmetic_rarity_lore: '§7Редкость: %rarity%'
+skywars_cosmetic_already_lore:
+    - '§7Данный предмет уже выбран!'
+skywars_cosmetic_click_to_set_lore:
+    - '§7Данный предмет у вас куплен'
+    - '§7и вы можете его выбрать'
+    - ''
+    - '§e▸ Нажмите, чтобы выбрать'
+skywars_cosmetic_buy_lore:
+    - '§7Цена предмета: §e%price%'
+    - ''
+    - '§e▸ Нажмите, чтобы купить'
+skywars_cosmetic_no_coins_lore:
+    - '§7Цена предмета: §e%price%'
+    - ''
+    - '§cУ вас недостаточно монеток!'
+skywars_cosmetic_only_ranked_lore:
+    - '§cДанный предмет можно получить'
+    - '§cтолько как награду в рейтинговом'
+    - '§cрежиме'
+
+skywars_shop_kits_name: '§aИгровые наборы'
+skywars_shop_kits_lore:
+    - ''
+    - '§7Игровые наборы которые будут выданы'
+    - '§7при начале игры, с помощью них вы'
+    - '§7можете использовать различные тактики'
+    - '§7и стратегии'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_perks_name: '§aУмения'
+skywars_shop_perks_lore:
+    - ''
+    - '§7Умения дают вам дополнительные'
+    - '§7способности, вещи, награды для'
+    - '§7большего шанса победить в игре'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_cages_name: '§aКлетки'
+skywars_shop_cages_lore:
+    - ''
+    - '§7Покажите всем игрокам свою крутую'
+    - '§7клетку, чтобы все игроки поняли'
+    - '§7вашу крутость'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_project_trails_name: '§aСледы от снаряда'
+skywars_shop_project_trails_lore:
+    - ''
+    - '§7Следы от снаряда будут показаны после'
+    - '§7того как вы кинете снежок, удочку'
+    - '§7или что-то другое'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_victory_dances_name: '§aПобедные танцы'
+skywars_shop_victory_dances_lore:
+    - ''
+    - '§7Победный танец который будет показан'
+    - '§7всем игрокам после вашей победы в игре'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_kill_effects_name: '§aЭффекты при убийстве'
+skywars_shop_kill_effects_lore:
+    - ''
+    - '§7Эффект который появится после убийства'
+    - '§7игрока'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_levels_name: '§dПрогресс уровня SkyWars'
+skywars_shop_levels_lore:
+    - '§7Посмотрите информацию о вашем SkyWars уровне'
+    - '§7или выберите ваш значок престижа'
+    - ''
+    - '§7Прогресс: §b%skywars_user_current_exp%§7/§a%skywars_level_exp%'
+    - '§8[ %progress_bar% §8]'
+    - ''
+    - '§e▸ Нажмите, чтобы открыть'
+skywars_shop_ranked_info_name: '§bНаграды Ranked'
+skywars_shop_ranked_info_lore:
+    - '§8Сезон Ranked %season%'
+    - ''
+    - '§7Текущий рейтинг: §e%rating%'
+    - ''
+    - '§7Всего Ranked побед: §e%ranked_wins%'
+    - '§7Всего Ranked убийств: §e%ranked_kills%'
+    - ''
+    - '§e▸ Нажмите, чтобы посмотреть награды'
+
+skywars_game_lobby_sidebar_ranked_played: '§fРейтинг: §a%rating%' 
+skywars_game_lobby_sidebar_lines:
+- ''
+- '§fВаш уровень: %skywars_level%'
+- ''
+- '§fОдиночные убийства: §a%solo_kills%'
+- '§fОдиночные победы: §a%solo_wins%'
+- '§fРейтинговые убийства: §a%ranked_kills%'
+- '§fРейтинговые победы: §a%ranked_wins%'
+- ''
+- '%ranked_has_played%'
+- '§fДуш: §b%souls%§7/%maxSouls%'
+- '§fМонеток: §a%user_coins%'
+- ''
+- '§ewww.litedays.net'
+
+# победные танцы
+skywars_cosmetic_fireworks_victory_dance_name: 'Фейерверки'
+skywars_cosmetic_night_shift_victory_dance_name: 'Ночная смена'
+skywars_cosmetic_dragon_victory_dance_name: 'Дракон'
+skywars_cosmetic_anvil_rain_victory_dance_name: 'Дождь из наковален'
+
+# киллэффекты
+skywars_cosmetic_tnt_killeffect_name: 'Взрыв'
+skywars_cosmetic_blood_killeffect_name: 'Кровавый взрыв'
+skywars_cosmetic_head_rocket_killeffect_name: 'Вылетающая голова'
+skywars_cosmetic_heart_killeffect_name: 'Сердца'
+skywars_cosmetic_squid_killeffect_name: 'Ракета из осьминога'
+skywars_cosmetic_final_smash_killeffect_name: 'Финальный удар'
+skywars_cosmetic_lighting_killeffect_name: 'Молния'
+skywars_cosmetic_fountain_cookie_killeffect_name: 'Фонтан из печенек'
+skywars_cosmetic_fly_message_killeffect_name: 'Воздущное сообщение'
+
+# клетки
+skywars_cosmetic_default_cage_name: 'Стандартная'
+skywars_cosmetic_slime_cage_name: 'Слаймовая'
+
+# траилы
+skywars_cosmetic_heart_trail_name: 'Сердца'
+skywars_cosmetic_notes_trail_name: 'Нотки'
+skywars_cosmetic_fire_trail_name: 'Пламя'
+skywars_cosmetic_green_star_trail_name: 'Зеленые частицы'
+skywars_cosmetic_village_angry_trail_name: 'Злой житель'
+skywars_cosmetic_slime_trail_name: 'Слайм'
+skywars_cosmetic_fire_spiral_trail_name: 'Огненная спираль'
+skywars_cosmetic_blood_spiral_trail_name: 'Кровяная спираль'
+skywars_cosmetic_potion_trail_name: 'Зелье'
+skywars_cosmetic_water_drip_trail_name: 'Капли воды' 
+skywars_cosmetic_lava_drip_trail_name: 'Капли лавы'
+skywars_cosmetic_magic_trail_name: 'Магия энда'
+skywars_cosmetic_smoke_trail_name: 'Дым'
+skywars_cosmetic_enchanting_trail_name: 'Зачарования'
+
+# престижи от уровня
+skywars_prestige_default_name: '§eСтандартный'
+skywars_prestige_angel_i_name: 'Ангел смерти I'
+skywars_prestige_angel_ii_name: 'Ангел смерти II'
+skywars_prestige_angel_iii_name: 'Ангел смерти III'
+skywars_prestige_angel_iv_name: 'Ангел смерти IV'
+skywars_prestige_angel_v_name: 'Ангел смерти V'
+skywars_prestige_angel_vi_name: 'Ангел смерти VI'
+skywars_prestige_angel_vii_name: 'Ангел смерти VII'
+skywars_prestige_angel_viii_name: 'Ангел смерти VIII'
+skywars_prestige_angel_ix_name: 'Ангел смерти IX'
+skywars_prestige_angel_x_name: 'Ангел смерти X'
+skywars_prestige_angel_xi_name: 'Ангел смерти XI'
+skywars_prestige_angel_xii_name: 'Ангел смерти XII'
+skywars_prestige_iron_name: '§fЖелезный престиж'
+skywars_prestige_gold_name: '§6Золотой престиж'
+skywars_prestige_diamond_name: '§bАлмазный престиж'
+skywars_prestige_emerald_name: '§2Изумрудный престиж'
+skywars_prestige_sapphire_name: '§3Сапфировый престиж'
+skywars_prestige_ruby_name: '§4Рубиновый престиж'
+skywars_prestige_crystal_name: '§dКристалловый престиж'
+skywars_prestige_opal_name: '§9Опаловый престиж'
+skywars_prestige_amethyst_name: '§5Аметистовый престиж'
+skywars_prestige_rainbow_name: 'Радужный престиж'
+skywars_prestige_mythic_name: 'Mythic престиж'
+skywars_prestige_lore:
+    - '§7Устанавливает ваш текущий значок престижа'
+    - '§7на §f%level_prestige%'
+    - ''
+    - '%level_display_name% %user_display_name%'
+skywars_prestige_already_lore: '§aДанный престиж уже выбран!'
+skywars_prestige_click_set_lore: '§e▸ Нажмите, чтобы выбрать'
+skywars_prestige_not_level_angel_of_death_lore: 
+    - '§cЧтобы разблокировать данный престиж, вам'
+    - '§cнеобходим %required_level% уровень'
+    - '§cангела смерти'
+skywars_prestige_not_level_lore: 
+    - '§cЧтобы разблокировать данный престиж, вам'
+    - '§cнеобходим %required_level% уровень'
+
+skywars_cosmetic_kill_effect_lore:
+    - '§7та хер его знает, короче киллэффект'
+    - '§7под названием §a%name% §7очень крутой'
+skywars_cosmetic_victory_dance_lore:
+    - '§7та хер его знает, короче победный танец'
+    - '§7под названием §a%name% §7очень крутой'
+skywars_cosmetic_arrow_lore:
+    - '§7та хер его знает, короче след от снаряда'
+    - '§7под названием §a%name% §7очень крутой'
+skywars_cosmetic_cage_lore:
+    - '§7та хер его знает, короче клетка'
+    - '§7под названием §a%name% §7очень крутой'
+
+skywars_message_player_joined: '$skywars_prefix$%user_display_name% §fприсоединился к игре §7(%current_players%/%max_players%'
+skywars_message_cage_starting: '$skywars_prefix$Открытие клеток через: §a%time% §f%format%'
+skywars_message_waiting_starting: '$skywars_prefix$Начало игры через §a%time% §r%format%'
+skywars_message_information_corrupted:
+    - '     §fДанная игра является §5испорченной §fпоэтому'
+    - '    §fполученный §dопыт §fи §6монеты §fбудут удвоены'
+skywars_message_information:
+    - '                      §b§lSkyWars'
+    - '      §fСобирайте ресурсы и оборудование на вашем острове'
+    - '         §fчтобы устранить всех остальных игроков.'
+    - ' §fОтправляйтесь на центральный остров за специальными сундуками'
+    - '                 §fособыми предметами!'
+skywars_message_information_teaming: '§c§lВнимание! §cВ данном режиме запрещено обьединяться в команды, §cпри нарушение админстрация проекта может вас наказать'
+
+skywars_title_game_starting: '%time%;§fДо начало игры!'
+skywars_title_game_started: '§aИгра началась;§7Уничтожьте всех врагов!'
+skywars_title_game_ended_victory: '§aПОБЕДА;§7Вы победили эту игру!'
+skywars_title_game_player_died: '§c§lВЫ ПОГИБЛИ;§7Теперь вы наблюдатель :('
+skywars_title_game_player_died_by_target: '§c§lВЫ ПОГИБЛИ;§7Вас убил игрок %killer_display_name%'
